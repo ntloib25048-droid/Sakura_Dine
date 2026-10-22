@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Sakura Dine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="site-header"></div>
+
+    <main class="menu-page container">
+        <div class="menu-title">
+            <div>
+                <p class="eyebrow">SEASONAL INGREDIENTS. TIMELESS TRADITIONS.</p>
+                <h1>Something for <em>every craving.</em></h1>
+                <p>
+                    From the first bite to the last sip,
+                    discover your own little moment of Japan.
+                </p>
+            </div>
+            <div class="menu-jp">お品書き</div>
+        </div>
+
+        <div class="menu-tools">
+            <div class="filters">
+                <button class="filter active" data-filter="All">All dishes</button>
+                <button class="filter" data-filter="Sushi">Sushi</button>
+                <button class="filter" data-filter="Sashimi">Sashimi</button>
+                <button class="filter" data-filter="Ramen">Ramen</button>
+                <button class="filter" data-filter="Drinks">Drinks</button>
+                <button class="filter" data-filter="Desserts">Desserts</button>
+            </div>
+
+            <input id="search-menu" type="search"
+                   placeholder="⌕ Find a favorite..."
+                   aria-label="Search dishes">
+        </div>
+
+        <p class="menu-count" id="menu-count">
+            9 thoughtfully crafted dishes
+        </p>
+
+        <div class="food-grid menu-grid" id="menu-grid">
+
+            <article class="food-card"
+                     data-category="Sushi"
+                     data-name="Signature Sushi Platter">
+                <img src="ANH/Signature Sushi Platter.jpg"
+                     alt="Signature sushi platter">
+                <div class="food-info">
+                    <small>SUSHI</small>
+                    <h3>Signature Sushi Platter</h3>
+                    <p class="desc">A thoughtful selection of fresh nigiri and maki.</p>
+                    <p class="price">$32.00</p>
+                    <button class="add-btn" data-add="Signature Sushi Platter" data-price="32">Add to cart ＋</button>
+                </div>
+            </article>
+
+            <article class="food-card"
+                     data-category="Sashimi"
+                     data-name="Salmon Sashimi">
+                <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=700&q=80"
+                     alt="Salmon sashimi">
+                <div class="food-info">
+                    <small>SASHIMI</small>
+                    <h3>Salmon Sashimi</h3>
+                    <p class="desc">Premium salmon, freshly sliced with wasabi and daikon.</p>
+                    <p class="price">$24.00</p>
+                    <button class="add-btn" data-add="Salmon Sashimi" data-price="24">Add to cart ＋</button>
+                </div>
+            </article>
+
+            <article class="food-card"
+                     data-category="Ramen"
+                     data-name="Tonkotsu Ramen">
+                <img src="ANH/ramen2.jpg"
+                     alt="Tonkotsu ramen">
+                <div class="food-info">
+                    <small>RAMEN</small>
+                    <h3>Tonkotsu Ramen</h3>
+                    <p class="desc">Rich pork broth, springy noodles and a soft-boiled egg.</p>
+                    <p class="price">$18.00</p>
+                    <button class="add-btn" data-add="Tonkotsu Ramen" data-price="18">Add to cart ＋</button>
+                </div>
+            </article>
+
+            <article class="food-card"
+                     data-category="Sushi"
+                     data-name="Dragon Roll">
+                <img src="ANH/Dragon Roll.jpg"
+                     alt="Dragon roll">
+                <div class="food-info">
+                    <small>ROLLS</small>
+                    <h3>Dragon Roll</h3>
+                    <p class="desc">Tempura shrimp, creamy avocado and cucumber.</p>
+                    <p class="price">$22.00</p>
+                    <button class="add-btn" data-add="Dragon Roll" data-price="22">Add to cart ＋</button>
+                </div>
+            </article>
+
+            <article class="food-card"
+                     data-category="Sushi"
+                     data-name="Unaju">
+                <img src="ANH/Unaju.jpg"
+                     alt="Japanese seafood rice">
+                <div class="food-info">
+                    <small>RICE</small>
+                    <h3>Unaju</h3>
+                    <p class="desc">Seasoned rice served with rich Japanese flavors.</p>
+                    <p class="price">$26.00</p>
+                    <button class="add-btn" data-add="Unaju" data-price="26">Add to cart ＋</button>
+                </div>
+            </article>
+
+            <article class="food-card"
+                     data-category="Ramen"
+                     data-name="Spicy Miso Ramen">
+                <img src="ANH/ramen.jpg"
+                     alt="Spicy miso ramen">
+                <div class="food-info">
+                    <small>RAMEN</small>
+                    <h3>Spicy Miso Ramen</h3>
+                    <p class="desc">Miso broth, tender noodles and a touch of heat.</p>
+                    <p class="price">$20.00</p>
+                    <button class="add-btn" data-add="Spicy Miso Ramen" data-price="20">Add to cart ＋</button>
+                </div>
+            </article>
+
+            <article class="food-card"
+                     data-category="Drinks"
+                     data-name="Ceremonial Matcha">
+                <img src="ANH/matcha.jpg"
+                     alt="Matcha tea">
+                <div class="food-info">
+                    <small>DRINKS</small>
+                    <h3>Ceremonial Matcha</h3>
+                    <p class="desc">Stone-ground matcha, gently whisked to perfection.</p>
+                    <p class="price">$7.00</p>
+                    <button class="add-btn" data-add="Ceremonial Matcha" data-price="7">Add to cart ＋</button>
+                </div>
+            </article>
+
+            <article class="food-card"
+                     data-category="Desserts"
+                     data-name="Seasonal Mochi">
+                <img src="ANH/mocha.jpg"
+                     alt="Japanese dessert">
+                <div class="food-info">
+                    <small>DESSERTS</small>
+                    <h3>Seasonal Mochi</h3>
+                    <p class="desc">A sweet finish with a soft, delicate texture.</p>
+                    <p class="price">$9.00</p>
+                    <button class="add-btn" data-add="Seasonal Mochi" data-price="9">Add to cart ＋</button>
+                </div>
+            </article>
+
+            <article class="food-card"
+                     data-category="Sashimi"
+                     data-name="Sashimi Selection">
+                <img src="ANH/shashimi.jpg"
+                     alt="Sashimi selection">
+                <div class="food-info">
+                    <small>SASHIMI</small>
+                    <h3>Sashimi Selection</h3>
+                    <p class="desc">A chef's selection inspired by the day's freshest catch.</p>
+                    <p class="price">$38.00</p>
+                    <button class="add-btn" data-add="Sashimi Selection" data-price="38">Add to cart ＋</button>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="notice">
+            ♧ Good food is for everyone. Please tell us about any
+            allergies or dietary requirements in your order notes.
+        </div>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="app.js"></script>
+</body>
+</html>

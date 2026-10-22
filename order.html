@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now | Sakura Dine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="site-header"></div>
+
+    <main class="order-page container">
+        <p class="eyebrow">FRESHLY MADE. DELIVERED WITH CARE.</p>
+        <h1>Your little <em>taste of Japan.</em></h1>
+        <p>Just a few details, and we'll take care of the rest.</p>
+
+        <div class="checkout-grid">
+            <section class="cart-panel">
+                <div class="cart-heading">
+                    <h2>Your order</h2>
+                    <span id="item-count">0 items</span>
+                </div>
+
+                <div id="cart-items"></div>
+
+                <div id="empty-cart" class="empty-cart">
+                    <div class="bag-icon">♧</div>
+                    <h3>A delicious beginning awaits.</h3>
+                    <p>Your bag is empty. Find something you love on our menu.</p>
+                    <a class="btn" href="menu.html">Explore the menu →</a>
+                </div>
+
+                <div class="notice">
+                    ◷ Good things take a little time.
+                    <br><small>Freshly prepared in 35–50 minutes.</small>
+                </div>
+            </section>
+
+            <form class="delivery-form" id="checkout-form">
+                <h2>Delivery details</h2>
+
+                <label>
+                    Full name
+                    <input name="fullname" placeholder="Your full name" required>
+                </label>
+
+                <div class="form-row">
+                    <label>
+                        Phone number
+                        <input name="phone" type="tel" placeholder="Your phone number" required>
+                    </label>
+
+                    <label>
+                        Email address
+                        <input name="email" type="email" placeholder="you@example.com" required>
+                    </label>
+                </div>
+
+                <label>
+                    Delivery address
+                    <input name="address" placeholder="Street address, apartment or suite" required>
+                </label>
+
+                <div class="form-row">
+                    <label>
+                        City
+                        <input name="city" placeholder="Your city" required>
+                    </label>
+
+                    <label>
+                        ZIP code
+                        <input name="zip" placeholder="ZIP code" required>
+                    </label>
+                </div>
+
+                <label>
+                    Delivery time
+                    <select name="time">
+                        <option>As soon as possible · 35–50 min</option>
+                        <option>Schedule for later today</option>
+                    </select>
+                </label>
+
+                <label>
+                    Order notes (optional)
+                    <textarea name="notes"
+                        placeholder="Allergies, delivery instructions or a little request..."></textarea>
+                </label>
+
+                <h2 class="payment-title">Payment method</h2>
+
+                <div class="payment-options">
+                    <label>
+                        <input type="radio" name="payment" value="Credit card" checked>
+                        Credit card
+                    </label>
+
+                    <label>
+                        <input type="radio" name="payment" value="Cash on delivery">
+                        Cash on delivery
+                    </label>
+                </div>
+
+                <small class="muted">
+                    Demo checkout only. No payment details are collected.
+                </small>
+
+                <div class="totals">
+                    <p><span>Subtotal</span><b id="subtotal">$0.00</b></p>
+                    <p><span>Delivery</span><b id="delivery">$0.00</b></p>
+                    <hr>
+                    <p class="total"><span>Total</span><b id="total">$0.00</b></p>
+                </div>
+
+                <button class="btn confirm-btn" type="submit">
+                    Confirm Order <span id="confirm-total">$0.00</span>
+                </button>
+
+                <p class="form-foot">
+                    Made with care, from our kitchen to your table.
+                </p>
+            </form>
+        </div>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="app.js"></script>
+</body>
+</html>
